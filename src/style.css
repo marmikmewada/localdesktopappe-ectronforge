@@ -1,0 +1,134 @@
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Title styling */
+  h1 {
+    margin-bottom: 20px;
+    color: #4A90E2;
+    font-size: 5rem;
+  }
+  
+  /* Input container */
+  .input-container {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Input field styling */
+  #todo-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #4A90E2;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  #todo-input:focus {
+    outline: none;
+    border-color: #007BFF;
+  }
+  
+  /* Button styling */
+  #add-todo-btn {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #add-todo-btn:hover {
+    background-color: #007BFF;
+  }
+  
+  /* Todo list styling */
+  #todo-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Individual todo item styling */
+  #todo-list li {
+    background-color: white;
+    padding: 15px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  #todo-list li:hover {
+    background-color: #f0f8ff;
+  }
+  
+  /* Completed todo styling */
+  .completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* Delete button styling */
+  .delete-btn {
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .input-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    #add-todo-btn {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    #todo-input {
+      width: 100%;
+    }
+  
+    #todo-list {
+      width: 100%;
+    }
+  }
+  
